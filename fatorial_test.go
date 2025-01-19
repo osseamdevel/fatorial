@@ -10,3 +10,9 @@ func TestFatorial(t *testing.T) {
 		t.Errorf("resultado %d, esperado %d", resultado, esperado)
 	}
 }
+
+func BenchmarkFatorial(b *testing.B) {
+	for f := 0; f < b.N; f++ {
+		Fatorial(7)
+	}
+}
