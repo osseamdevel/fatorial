@@ -23,5 +23,5 @@ func BenchmarkFatorial(b *testing.B) {
 func ExampleFatorial() {
 	fatorial := Fatorial(10)
 	fmt.Println(fatorial)
-	// Output: 604800
+	// Output: 3628800
 }
